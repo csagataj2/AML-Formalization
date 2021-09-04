@@ -40,7 +40,7 @@
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Instance</span> <a id="test_1.Symbols_eqdec" class="idref" href="#test_1.Symbols_eqdec"><span class="id" title="instance">Symbols_eqdec</span></a> : <a class="idref" href="https://plv.mpi-sws.org/coqdoc/stdpp//stdpp.base.html#EqDecision"><span class="id" title="abbreviation">EqDecision</span></a> <a class="idref" href="MatchingLogic.Tests.TEST_LocallyNameless.html#test_1.Symbols"><span class="id" title="inductive">Symbols</span></a>.<br/>
-
+ 
 <br/>
 &nbsp;&nbsp;<span class="id" title="keyword">Instance</span> <a id="test_1.signature" class="idref" href="#test_1.signature"><span class="id" title="instance">signature</span></a> : <a class="idref" href="MatchingLogic.Syntax.html#Signature"><span class="id" title="class">Signature</span></a> :=<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{| <a class="idref" href="MatchingLogic.Syntax.html#variables"><span class="id" title="method">variables</span></a> := <a class="idref" href="MatchingLogic.SignatureHelper.html#StringMLVariables"><span class="id" title="definition">StringMLVariables</span></a> ;<br/>
@@ -110,7 +110,7 @@
 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Instance</span> <a id="test_2.Symbols_eqdec" class="idref" href="#test_2.Symbols_eqdec"><span class="id" title="instance">Symbols_eqdec</span></a> : <a class="idref" href="https://plv.mpi-sws.org/coqdoc/stdpp//stdpp.base.html#EqDecision"><span class="id" title="abbreviation">EqDecision</span></a> <a class="idref" href="MatchingLogic.Tests.TEST_LocallyNameless.html#test_2.Symbols"><span class="id" title="inductive">Symbols</span></a>.<br/>
-
+ 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Instance</span> <a id="test_2.signature" class="idref" href="#test_2.signature"><span class="id" title="instance">signature</span></a> : <a class="idref" href="MatchingLogic.Syntax.html#Signature"><span class="id" title="class">Signature</span></a> :=<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{| <a class="idref" href="MatchingLogic.Syntax.html#variables"><span class="id" title="method">variables</span></a> := <a class="idref" href="MatchingLogic.SignatureHelper.html#StringMLVariables"><span class="id" title="definition">StringMLVariables</span></a> ;<br/>
@@ -149,14 +149,17 @@
 &nbsp;&nbsp;&nbsp;&nbsp;.<br/>
 
 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Instance</span> <a id="test_2.CustomElements_eqdec" class="idref" href="#test_2.CustomElements_eqdec"><span class="id" title="instance">CustomElements_eqdec</span></a> : <a class="idref" href="https://plv.mpi-sws.org/coqdoc/stdpp//stdpp.base.html#EqDecision"><span class="id" title="abbreviation">EqDecision</span></a> <a class="idref" href="MatchingLogic.Tests.TEST_LocallyNameless.html#test_2.CustomElements"><span class="id" title="inductive">CustomElements</span></a>.<br/>
+ 
+<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Inductive</span> <a id="test_2.domain" class="idref" href="#test_2.domain"><span class="id" title="inductive">domain</span></a> : <span class="id" title="keyword">Type</span> :=<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;| <a id="test_2.dom_nat" class="idref" href="#test_2.dom_nat"><span class="id" title="constructor">dom_nat</span></a> (<a id="n:15" class="idref" href="#n:15"><span class="id" title="binder">n</span></a>:<a class="idref" href="http://coq.inria.fr/distrib/V8.13.2/stdlib//Coq.Init.Datatypes.html#nat"><span class="id" title="inductive">nat</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;| <a id="test_2.dom_custom" class="idref" href="#test_2.dom_custom"><span class="id" title="constructor">dom_custom</span></a> (<a id="c:16" class="idref" href="#c:16"><span class="id" title="binder">c</span></a>:<a class="idref" href="MatchingLogic.Tests.TEST_LocallyNameless.html#test_2.CustomElements"><span class="id" title="inductive">CustomElements</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;.<br/>
 
 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Instance</span> <a id="test_2.domain_dec" class="idref" href="#test_2.domain_dec"><span class="id" title="instance">domain_dec</span></a> : <a class="idref" href="https://plv.mpi-sws.org/coqdoc/stdpp//stdpp.base.html#EqDecision"><span class="id" title="abbreviation">EqDecision</span></a> <a class="idref" href="MatchingLogic.Tests.TEST_LocallyNameless.html#test_2.domain"><span class="id" title="inductive">domain</span></a>.<br/>
-
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Instance</span> <a id="test_2.domain_eqdec" class="idref" href="#test_2.domain_eqdec"><span class="id" title="instance">domain_eqdec</span></a> : <a class="idref" href="https://plv.mpi-sws.org/coqdoc/stdpp//stdpp.base.html#EqDecision"><span class="id" title="abbreviation">EqDecision</span></a> <a class="idref" href="MatchingLogic.Tests.TEST_LocallyNameless.html#test_2.domain"><span class="id" title="inductive">domain</span></a>.<br/>
+ 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="test_2.my_sym_interp" class="idref" href="#test_2.my_sym_interp"><span class="id" title="definition">my_sym_interp</span></a>(<a id="s:17" class="idref" href="#s:17"><span class="id" title="binder">s</span></a>: <a class="idref" href="MatchingLogic.Tests.TEST_LocallyNameless.html#test_2.Symbols"><span class="id" title="inductive">Symbols</span></a>) : <a class="idref" href="MatchingLogic.Semantics.html#Power"><span class="id" title="definition">Power</span></a> <a class="idref" href="MatchingLogic.Tests.TEST_LocallyNameless.html#test_2.domain"><span class="id" title="inductive">domain</span></a> :=<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">match</span> <a class="idref" href="MatchingLogic.Tests.TEST_LocallyNameless.html#s:17"><span class="id" title="variable">s</span></a> <span class="id" title="keyword">with</span><br/>
@@ -178,7 +181,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="test_2.M1" class="idref" href="#test_2.M1"><span class="id" title="definition">M1</span></a> : <a class="idref" href="MatchingLogic.Semantics.html#Model"><span class="id" title="record">Model</span></a> :=<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{| <a class="idref" href="MatchingLogic.Semantics.html#Domain"><span class="id" title="projection">Domain</span></a> := <a class="idref" href="MatchingLogic.Tests.TEST_LocallyNameless.html#test_2.domain"><span class="id" title="inductive">domain</span></a>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="MatchingLogic.Semantics.html#nonempty_witness"><span class="id" title="projection">nonempty_witness</span></a> := <a class="idref" href="MatchingLogic.Tests.TEST_LocallyNameless.html#test_2.dom_nat"><span class="id" title="constructor">dom_nat</span></a> 0;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="MatchingLogic.Semantics.html#Domain_eq_dec"><span class="id" title="projection">Domain_eq_dec</span></a> := <a class="idref" href="MatchingLogic.Tests.TEST_LocallyNameless.html#test_2.domain_dec"><span class="id" title="instance">domain_dec</span></a>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="MatchingLogic.Semantics.html#sym_interp"><span class="id" title="projection">sym_interp</span></a> := <span class="id" title="keyword">fun</span> <a id="s:22" class="idref" href="#s:22"><span class="id" title="binder">s</span></a> : <a class="idref" href="MatchingLogic.Syntax.html#symbols"><span class="id" title="method">symbols</span></a> ⇒ <a class="idref" href="MatchingLogic.Tests.TEST_LocallyNameless.html#test_2.my_sym_interp"><span class="id" title="definition">my_sym_interp</span></a> <a class="idref" href="MatchingLogic.Tests.TEST_LocallyNameless.html#s:22"><span class="id" title="variable">s</span></a>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
