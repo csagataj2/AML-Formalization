@@ -158,6 +158,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;.<br/>
 
 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Instance</span> <a id="test_2.domain_inhabited" class="idref" href="#test_2.domain_inhabited"><span class="id" title="instance">domain_inhabited</span></a> : <a class="idref" href="https://plv.mpi-sws.org/coqdoc/stdpp//stdpp.base.html#Inhabited"><span class="id" title="class">Inhabited</span></a> <a class="idref" href="MatchingLogic.Tests.TEST_LocallyNameless.html#test_2.domain"><span class="id" title="inductive">domain</span></a> := <a class="idref" href="https://plv.mpi-sws.org/coqdoc/stdpp//stdpp.base.html#populate"><span class="id" title="constructor">populate</span></a> (<a class="idref" href="MatchingLogic.Tests.TEST_LocallyNameless.html#test_2.dom_nat"><span class="id" title="constructor">dom_nat</span></a> 0).<br/>
+
+<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Instance</span> <a id="test_2.domain_eqdec" class="idref" href="#test_2.domain_eqdec"><span class="id" title="instance">domain_eqdec</span></a> : <a class="idref" href="https://plv.mpi-sws.org/coqdoc/stdpp//stdpp.base.html#EqDecision"><span class="id" title="abbreviation">EqDecision</span></a> <a class="idref" href="MatchingLogic.Tests.TEST_LocallyNameless.html#test_2.domain"><span class="id" title="inductive">domain</span></a>.<br/>
  
 <br/>
@@ -180,10 +183,7 @@
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a id="test_2.M1" class="idref" href="#test_2.M1"><span class="id" title="definition">M1</span></a> : <a class="idref" href="MatchingLogic.Semantics.html#Model"><span class="id" title="record">Model</span></a> :=<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{| <a class="idref" href="MatchingLogic.Semantics.html#Domain"><span class="id" title="projection">Domain</span></a> := <a class="idref" href="MatchingLogic.Tests.TEST_LocallyNameless.html#test_2.domain"><span class="id" title="inductive">domain</span></a>;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="MatchingLogic.Semantics.html#nonempty_witness"><span class="id" title="projection">nonempty_witness</span></a> := <a class="idref" href="MatchingLogic.Tests.TEST_LocallyNameless.html#test_2.dom_nat"><span class="id" title="constructor">dom_nat</span></a> 0;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="MatchingLogic.Semantics.html#sym_interp"><span class="id" title="projection">sym_interp</span></a> := <span class="id" title="keyword">fun</span> <a id="s:22" class="idref" href="#s:22"><span class="id" title="binder">s</span></a> : <a class="idref" href="MatchingLogic.Syntax.html#symbols"><span class="id" title="method">symbols</span></a> ⇒ <a class="idref" href="MatchingLogic.Tests.TEST_LocallyNameless.html#test_2.my_sym_interp"><span class="id" title="definition">my_sym_interp</span></a> <a class="idref" href="MatchingLogic.Tests.TEST_LocallyNameless.html#s:22"><span class="id" title="variable">s</span></a>;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="MatchingLogic.Semantics.html#sym_interp"><span class="id" title="projection">sym_interp</span></a> := <a class="idref" href="MatchingLogic.Tests.TEST_LocallyNameless.html#test_2.my_sym_interp"><span class="id" title="definition">my_sym_interp</span></a>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="MatchingLogic.Semantics.html#app_interp"><span class="id" title="projection">app_interp</span></a> := <a class="idref" href="MatchingLogic.Tests.TEST_LocallyNameless.html#test_2.my_app_interp"><span class="id" title="definition">my_app_interp</span></a>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|}.<br/>
 
